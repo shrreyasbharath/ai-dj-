@@ -50,7 +50,7 @@ function draw()
 
     if(ScoreLeftWrist > 0.2)
         {
-            circle(leftWristX, LeftWristY, 20);
+            circle(LeftWristX, LeftWristY, 20);
             song1.stop();
 
             if(song2_status == false)
