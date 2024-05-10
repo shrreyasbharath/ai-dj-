@@ -56,7 +56,7 @@ function draw()
             if(song2_status == false)
                 {
                     song2.play();
-                    document.getElementById("song").innerHTML = "Playing Game of Thrones theme!"
+                    document.getElementById("song").innerHTML = "Playing peter pan theme!"
                 }
         }
 }
@@ -82,13 +82,13 @@ function gotPoses(results)
             ScoreLeftWrist = results[0].pose.keypoints[10].score;
             console.log("ScoreRightWrist = " + ScoreRightWrist + "ScoreLeftWrist" + ScoreLeftWrist);
 
-            LeftWristX = results[0].pose.leftWrist.X
-            leftWristX = results[0].pose.leftWrist.X
+            LeftWristX = results[0].pose.leftWrist.x
+            LeftWristY = results[0].pose.leftWrist.y
             console.log("leftWristX = " + leftWristX + "leftWristY = " + LeftWristY);
 
-            RightWristX = results[0].pose.rightWrist.X
-            RightWristX = results[0].pose.rightWrist.X
-            console.log("rightWristX = " + rightWristX + " rightWristY = " + RightWristY);
+            RightWristX = results[0].pose.rightWrist.x
+            RightWristY = results[0].pose.rightWrist.y
+            console.log("rightWristX = " + RightWristX + " rightWristY = " + RightWristY);
 
         }
 }
